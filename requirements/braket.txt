@@ -1,0 +1,6 @@
+# ── AWS Braket (multi-vendor hardware) — isolated venv: .venv-braket ──────
+# LocalSimulator() is free and offline. Real devices and managed (cloud)
+# simulators COST MONEY per task/shot — there is no free hardware tier.
+# Auth uses standard AWS credentials (aws configure / env vars).
+# Install:  make venv-braket
+amazon-braket-sdk>=1.80

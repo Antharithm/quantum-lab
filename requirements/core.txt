@@ -1,0 +1,35 @@
+# ── Quantum Lab: main environment (.venv) ─────────────────────────────────
+# This is the stack the UI and most learning run on. PennyLane + the Qiskit
+# stack are installed together because they are designed to interoperate.
+# Cirq / D-Wave / Braket live in their own venvs (see the other files here) —
+# they fight over qiskit/numpy versions if mixed in.
+#
+# Install:  make setup     (or)   pip install -r requirements/core.txt
+
+# IBM Qiskit (gate-based) — 3-package split as of Qiskit 2.x
+qiskit>=2.0
+qiskit-aer>=0.15          # local high-performance simulator (no account needed)
+qiskit-ibm-runtime>=0.30  # access to real IBM hardware (needs a free token)
+
+# Quantum machine learning, hardware-agnostic
+pennylane>=0.40
+pennylane-qiskit>=0.40    # run PennyLane on Aer / IBM devices
+
+# Adaptive UI + visualization
+streamlit>=1.40
+plotly>=5.24
+matplotlib>=3.9
+pylatexenc>=2.10          # nicer circuit drawing for qiskit
+
+# Scientific stack
+numpy>=1.26
+scipy>=1.13
+pandas>=2.2
+
+# Notebooks
+jupyterlab>=4.2
+ipywidgets>=8.1
+
+# Tooling
+python-dotenv>=1.0
+pytest>=8.0

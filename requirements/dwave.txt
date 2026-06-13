@@ -1,0 +1,7 @@
+# ── D-Wave Ocean (quantum annealing / optimization) — venv: .venv-dwave ───
+# Different paradigm from gate-based machines: you express problems as energy
+# functions (QUBO/Ising) and the annealer finds low-energy = good solutions.
+# Local classical samplers work with no account; real QPUs need a free Leap
+# account (DWAVE_API_TOKEN).
+# Install:  make venv-dwave
+dwave-ocean-sdk>=8.0

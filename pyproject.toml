@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-lab"
+version = "0.1.0"
+description = "A personal quantum-computing lab: learn hands-on and run experiments across IBM, Google, D-Wave, AWS Braket and PennyLane."
+readme = "README.md"
+requires-python = ">=3.11"
+# Runtime deps are pinned in requirements/core.txt (installed via `make setup`).
+# Listed loosely here so an editable install knows the package's intent.
+dependencies = []
+
+[tool.setuptools]
+packages = ["quantumlab"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

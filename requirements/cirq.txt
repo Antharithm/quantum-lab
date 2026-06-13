@@ -1,0 +1,5 @@
+# ── Google Cirq (gate-based) — isolated venv: .venv-cirq ──────────────────
+# Kept separate from the main env to avoid dependency conflicts.
+# Install:  make venv-cirq
+cirq>=1.4
+qsimcirq>=0.21    # faster state-vector simulator (optional)

@@ -1,0 +1,31 @@
+# Python virtual environments
+.venv/
+.venv-*/
+env/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets — NEVER commit real tokens
+.env
+*.env
+!.env.example
+
+# Local user state (adaptive profile, experiment outputs)
+data/profile.json
+experiments/results/*
+!experiments/results/.gitkeep
+
+# Qiskit / provider credential caches that may land locally
+.qiskit/
+
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
